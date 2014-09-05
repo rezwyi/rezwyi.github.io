@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="http://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css">
+
+    {% if page.title %}
+      <title>{{ page.title }} &mdash; Rezvanov.info</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
+  </head>
+  
+  <body>
+    <div class="layout">
+      <div class="logo">
+        <a href="/" title="На главную">Rezvanov<span>.info</span></a>
+      </div>
+
+      <div class="content">
+        <div class="about">{{ site.description }}</div>
+        {{ content }}
+      </div>
+      
+      <div class="footer">
+        <div class="copyright">© {% copyright_years %} ॐ मणि पद्मे हूँ</div>
+      </div>
+    </div>
+  </body>
+</html>

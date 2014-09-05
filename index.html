@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="page-home">
+  <div class="items">
+    <h2 class="title">Проекты</h2>
+    
+    {% for project in site.data.projects %}
+      <div class="item">
+        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a> {{ project.about }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="items">
+    <h2 class="title">Блог</h2>
+
+    {% for post in site.posts %}
+      <div class="item">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <div class="pubdate">{{ post.date | localize: '%-d %B, %Y' }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
