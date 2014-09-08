@@ -79,6 +79,9 @@ blockquote {
   }
   pre {
     > code {
+      display: block;
+      background: #fdf6e3;
+      color: #657b83;
       margin: 30px 0 0 0;
       padding: 30px;
       border-radius: 10px;
