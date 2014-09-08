@@ -6,4 +6,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('copyright_years', Jekyll::CopyrightYearsTag)
+Liquid::Template.register_tag 'copyright_years', Jekyll::CopyrightYearsTag
