@@ -35,6 +35,11 @@
       }
       > ol, > ul {
         margin: 10px 0 0 45px;
+        > li {
+          > ul {
+            margin: 10px 0 10px 45px;
+          }
+        }
       }
     }
   }
