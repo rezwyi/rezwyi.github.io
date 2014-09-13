@@ -5,7 +5,7 @@ layout: default
 <div class="page-posts">
   <div class="post">
     <h1 class="title">
-      {{ page.title }} <div class="pubdate">{{ page.date | localize: '%-d %B, %Y' }}</div>
+      {{ page.title }} <div class="pubdate">{{ page.date | date: '%-d/%-m/%Y' }}</div>
      </h1>
 
      <div class="body">{{ content }}</div>

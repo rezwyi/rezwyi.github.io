@@ -19,7 +19,7 @@ layout: default
     {% for post in site.posts %}
       <div class="item">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <div class="pubdate">{{ post.date | localize: '%-d %B, %Y' }}</div>
+        <div class="pubdate">{{ post.date | date: '%-d/%-m/%Y' }}</div>
       </div>
     {% endfor %}
   </div>
