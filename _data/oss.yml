@@ -1,5 +1,7 @@
 - name: elasticonf
   url: https://github.com/rezwyi/elasticonf
+  about: Решение для работы с конфигурационными файлами в любой ruby-программе
 
 - name: elasticonf-rails
   url: https://github.com/rezwyi/elasticonf-rails
+  about: Адаптер Elasticonf для интеграции с Ruby on Rails

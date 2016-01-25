@@ -14,11 +14,11 @@ layout: default
   </div>
 
   <div class="items">
-    <h2 class="title">Open source</h2>
+    <h2 class="title">Open Source</h2>
     
     {% for project in site.data.oss %}
       <div class="item">
-        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>  {{ project.about }}
       </div>
     {% endfor %}
   </div>
