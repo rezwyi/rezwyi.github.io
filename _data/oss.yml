@@ -1,0 +1,5 @@
+- name: elasticonf
+  url: https://github.com/rezwyi/elasticonf
+
+- name: elasticonf-rails
+  url: https://github.com/rezwyi/elasticonf-rails

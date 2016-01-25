@@ -14,6 +14,16 @@ layout: default
   </div>
 
   <div class="items">
+    <h2 class="title">Open source</h2>
+    
+    {% for project in site.data.oss %}
+      <div class="item">
+        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="items">
     <h2 class="title">Блог</h2>
 
     {% for post in site.posts %}
