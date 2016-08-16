@@ -1,3 +1,7 @@
+- name: anketa.bm.ru
+  url: https://anketa.bm.ru
+  about: Разработка, Поддержка, Аудит
+
 - name: yagoodza.ru
   url: http://yagoodza.ru
   about: Разработка, Поддержка, Аудит
