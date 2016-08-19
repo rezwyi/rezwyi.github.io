@@ -196,7 +196,10 @@ h3 {
       code {
         display: block;
         padding: 1em;
-        // background-color: rgba(0, 0, 0, 0.04);
+
+        &:before, &:after {
+          content: '';
+        }
       }
     }
 
