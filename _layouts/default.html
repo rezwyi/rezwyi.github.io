@@ -1,22 +1,27 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="{{ site.description }}">
+    <meta charset="utf-8">
 
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="{{ "/css/default.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href="http://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Marmelad&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     {% if page.title %}
       <title>{{ page.title }} &mdash; Rezvanov.info</title>
     {% else %}
       <title>{{ site.title }}</title>
     {% endif %}
-    
+
     <script type="text/javascript">
       var root = (typeof exports !== 'undefined' && exports !== null) ? exports : this;
       root._gaq = [['_setAccount', 'UA-24462942-3'], ['_trackPageview']];
@@ -25,7 +30,7 @@
         var ga = document.createElement('script'),
             proto = document.location.protocol,
             s = document.getElementsByTagName('script');
-        
+
         ga.type = 'text/javascript';
         ga.async = true;
         proto = (proto === 'https:') ? 'https://ssl' : 'http://www';
@@ -34,21 +39,10 @@
       })();
     </script>
   </head>
-  
-  <body>
-    <div class="layout">
-      <div class="logo">
-        <a href="/" title="На главную">Rezvanov<span>.info</span></a>
-      </div>
 
-      <div class="content">
-        <div class="about">{{ site.description }}</div>
-        {{ content }}
-      </div>
-      
-      <div class="footer">
-        <div class="copyright">© 2011&mdash;2016 ॐ मणि पद्मे हूँ</div>
-      </div>
+  <body>
+    <div id='layout' class='pure-g'>
+      {{ content }}
     </div>
   </body>
 </html>

@@ -53,7 +53,7 @@ sys  0m0.017s
 Речь о трети секунды для обеих команд. А вот аналог в Subversion - запуск copy, а затем переключение switch:
 
 {% highlight bash %}
-$ time svn copy -m 'my idea' https://svn.example.com/trunk https://svn.example.com/svn/branches/myidea 
+$ time svn copy -m 'my idea' https://svn.example.com/trunk https://svn.example.com/svn/branches/myidea
 real 0m5.172s
 user 0m0.033s
 sys 0m0.016s

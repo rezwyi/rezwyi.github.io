@@ -1,11 +1,8 @@
 # Site settings
 baseurl: ''
 url: 'http://rezvanov.info'
-title: Web 2.0 - Rezvanov.info
-description: >
-  Проектирование, разработка и поддержка веб-сайтов и веб-приложений.
-  Разработка на Ruby On Rails с использованием TDD или BDD. А также аудит и
-  консультирование по вопросам производительности веб-приложений.
+title: Замкнутость и созерцание - Rezvanov.info
+description: Программист, энтузиаст, геймер.
 
 # Build settings
 markdown: kramdown
