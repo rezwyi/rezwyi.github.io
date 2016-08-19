@@ -1,11 +1,19 @@
+- name: anketa.bm.ru
+  url: https://anketa.bm.ru
+  about: разработка, поддержка, аудит
+
 - name: yagoodza.ru
   url: http://yagoodza.ru
-  about: Разработка, Поддержка, Аудит
+  about: разработка, поддержка, аудит
 
 - name: tango-cash.ru
   url: http://tango-cash.ru
-  about: Разработка
+  about: разработка
 
 - name: detstvo-shop.ru
   url: http://detstvo-shop.ru
-  about: Разработка, Поддержка, Аудит
+  about: разработка, поддержка, аудит
+
+- name: elasticonf
+  url: https://github.com/rezwyi/elasticonf
+  about: разработка, поддержка, open-source

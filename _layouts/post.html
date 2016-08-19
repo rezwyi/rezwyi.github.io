@@ -2,12 +2,20 @@
 layout: default
 ---
 
-<div class="page-posts">
-  <div class="post">
-    <h1 class="title">
-      {{ page.title }} <div class="pubdate">{{ page.date | date: '%-d/%-m/%Y' }}</div>
-     </h1>
+{% include sidebar.html %}
 
-     <div class="body">{{ content }}</div>
+<div class='content pure-u-1 pure-u-md-3-4'>
+  <div class='content-container'>
+    <a href="/">≪ На главную</a>
+
+    <section class='post'>
+      <h1 class='post-title'>
+        {{ page.title }} <div class='pubdate'>{{ page.date | date: '%-d/%-m/%Y' }}</div>
+      </h1>
+
+      <div class='post-body'>{{ content }}</div>
+    </section>
+
+    {% include footer.html %}
   </div>
-</div>
+<div>

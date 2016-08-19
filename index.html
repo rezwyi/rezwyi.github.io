@@ -2,35 +2,36 @@
 layout: default
 ---
 
-<div class="page-home">
-  <div class="items">
-    <h2 class="title">Проекты</h2>
-    
-    {% for project in site.data.projects %}
-      <div class="item">
-        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a> {{ project.about }}
-      </div>
-    {% endfor %}
-  </div>
+{% include sidebar.html %}
 
-  <div class="items">
-    <h2 class="title">Open Source</h2>
-    
-    {% for project in site.data.oss %}
-      <div class="item">
-        <a href="{{ project.url }}" target="_blank">{{ project.name }}</a>  {{ project.about }}
-      </div>
-    {% endfor %}
-  </div>
+<div class='content pure-u-1 pure-u-md-3-4'>
+  <div class='content-container'>
+    <h1 class='content-subhead'>Проекты</h1>
 
-  <div class="items">
-    <h2 class="title">Блог</h2>
+    <section class='projects'>
+      <ul>
+        {% for project in site.data.projects %}
+          <li>
+            <a href='{{ project.url }}' target='_blank'>{{ project.name }}</a>
+            <span class='project-notes'>{{ project.about }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
 
-    {% for post in site.posts %}
-      <div class="item">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        <div class="pubdate">{{ post.date | date: '%-d/%-m/%Y' }}</div>
-      </div>
-    {% endfor %}
+    <h1 class='content-subhead'>Блог</h1>
+
+    <section class='posts'>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href='{{ post.url | prepend: site.baseurl }}'>{{ post.title }}</a>
+            <span class='pubdate'>{{ post.date | date: '%-d/%-m/%Y' }}</span>
+          </lin>
+        {% endfor %}
+      </ul>
+    </section>
+
+    {% include footer.html %}
   </div>
 </div>
