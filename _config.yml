@@ -1,8 +1,8 @@
 # Site settings
 baseurl: ''
 url: 'http://rezvanov.info'
-title: Замкнутость и созерцание - Rezvanov.info
-description: Программист, энтузиаст, геймер.
+title: Замкнутость и созерцание - rezvanov.info
+description: Ruby/Go энтузиаст, DevOps.
 
 # Build settings
 markdown: kramdown
