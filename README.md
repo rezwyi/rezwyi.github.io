@@ -1,4 +1,4 @@
-Rezvanov.info
+rezvanov.info
 =============
 
 Исходники моего персонального блога, который работает на движке [Jekyll](http://jekyllrb.com/) и хостится на [GitHub Pages](https://pages.github.com/). В качестве CSS-фреймворка используется [PureCSS](http://purecss.io) и его немного доработанный [лейаут](http://purecss.io/layouts/blog/).
