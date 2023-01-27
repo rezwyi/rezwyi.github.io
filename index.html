@@ -6,14 +6,13 @@ layout: default
 
 <div class='content pure-u-1 pure-u-md-3-4'>
   <div class='content-container'>
-    <h1 class='content-subhead'>Проекты</h1>
+    <h1 class='content-subhead'>OSS</h1>
 
     <section class='projects'>
       <ul>
         {% for project in site.data.projects %}
           <li>
             <a href='{{ project.url }}' target='_blank'>{{ project.name }}</a>
-            <span class='project-notes'>{{ project.about }}</span>
           </li>
         {% endfor %}
       </ul>
